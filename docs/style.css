@@ -12,19 +12,29 @@
 header {
     font-family: SpartanMB;
     display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 } 
 
 h1 {
-    align-self: center;   
+    width: 100%;  
+    text-align: center;
+}
+
+nav {
+    align-self: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .menu {
-    align-self: center;
     list-style-type: none;
 }
 
 .menu--icon {
-
+    display: none;
 }
 
 .menu--expanded {
@@ -32,4 +42,6 @@ h1 {
 }
 
 /*////////////////////////////////////////////////////////////////////////////////*/
-
+@media screen and (min-width: 500px) {
+    
+}
