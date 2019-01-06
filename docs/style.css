@@ -1,0 +1,29 @@
+@font-face {
+    font-family: SpartanMB;
+    src: url(fonts/SpartanMB-Regular.otf);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+
+header {
+    font-family: SpartanMB;
+} 
+
+.menu {
+
+}
+
+.menu--icon {
+
+}
+
+.menu--expanded {
+
+}
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+
