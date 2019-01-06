@@ -3,6 +3,8 @@
     src: url(fonts/SpartanMB-Regular.otf);
 }
 
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
 * {
     box-sizing: border-box;
 }
@@ -64,10 +66,14 @@ main {
 .content {
     background: rgb(158, 148, 148); 
     margin: auto;
+    padding: 5px;
     width: 70%;
     height: 400px;
     display: none;
+    font-family: 'Libre Baskerville', serif; 
+    overflow: hidden;
 }
+
 
 /*////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 500px) {
@@ -107,6 +113,9 @@ main {
 }
 
 @media screen and (min-width: 1000px) {
+    h1 {
+        width: auto;
+    }
     .menu--icon {
         display: none;
     }
@@ -114,12 +123,12 @@ main {
     .menu--expanded {
         display: flex;
         justify-content: space-evenly;
-        font-size: 20px;
-        margin-right: 25%;
+        font-size: 25px;
+        margin-right: 5%;
     }
 
     .menu--expanded li {
-        margin: 5%;
+        margin: 0 5%;
         padding: 0;
     }
 } 
