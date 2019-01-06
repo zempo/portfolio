@@ -7,18 +7,27 @@
     box-sizing: border-box;
 }
 
-/*////////////////////////////////////////////////////////////////////////////////*/
+body {
+    margin: 0;
+}
 
+.rwd {
+    display: block;
+}
+
+/*////////////////////////////////////////////////////////////////////////////////*/
+ 
 header {
     font-family: SpartanMB;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
 } 
-
+ 
 h1 {
     width: 100%;  
     text-align: center;
+    font-size: 45px; 
 }
 
 nav {
@@ -38,10 +47,34 @@ nav {
 }
 
 .menu--expanded {
+    padding: 0;
+    font-size: 30px; 
+}
 
+.menu--expanded a {
+    text-decoration: none;
+    color: rgb(39, 34, 34);
+}
+
+main {
+    display: flex;
+    width: 100%;
+}
+
+.content {
+    background: rgb(158, 148, 148); 
+    margin: auto;
+    width: 70%;
+    height: 400px;
+    display: none;
 }
 
 /*////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 500px) {
-    
+    .rwd {
+        display: none;
+    }
+    .content {
+        display: block;
+    }
 }
