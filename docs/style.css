@@ -11,10 +11,16 @@
 
 header {
     font-family: SpartanMB;
+    display: flex;
 } 
 
-.menu {
+h1 {
+    align-self: center;   
+}
 
+.menu {
+    align-self: center;
+    list-style-type: none;
 }
 
 .menu--icon {
