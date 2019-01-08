@@ -4,4 +4,11 @@
 
 // dynamic content resizing w/ DOM
 
-// json data + project search query? 
+// json data + project search query?  
+
+// hover for bio on desktop/tablet
+// Display Bio Text on mobile  
+
+// percentage scrolling window for projects .html
+
+// hover/expand solomon zelenko 
