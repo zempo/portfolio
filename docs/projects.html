@@ -26,9 +26,25 @@
     </header> 
 
     <main role="main">
-        <div class="content">
-            <p style="font-size:25px;text-align:center">Project Content</p>
-            <p style="font-size:25px;text-align:center">Add scrolling feature.</p>
+        <div class="content content--projects"> 
+            <form>
+                <fieldset>
+                 <label class="label1" for="projectName">Project Search</label>   
+                 <input type="text" name="projectName" id="projectName" placeholder="Search for Projects">
+                 <label class="label2" for="year">Year&nbsp;</label>
+                 <select name="year" id="year">
+                     <option value="2019">2019</option>
+                     <option value="2018">2018</option>
+                 </select>
+                 <label for="language" class="label3">Language</label> 
+                 <select name="language" id="language">
+                     <option value="js">javaScript E6</option>
+                     <option value="python">python 3</option>
+                     <option value="php">PHP 5</option>
+                     <option value="sql">SQL</option>
+                 </select>  
+                </fieldset>   
+            </form>
         </div>
     </main>
     
