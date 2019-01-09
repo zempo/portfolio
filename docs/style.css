@@ -19,7 +19,7 @@ body {
     display: block;
 } 
 
-/*////////////////////////////////////////////////////////////////////////////////*/
+/*///////////////////////////////////////   HOME  /////////////////////////////*/
  
 header {
     font-family: SpartanMB;
@@ -72,8 +72,7 @@ main {
 
 .content {
     border: 1px solid rgb(158, 148, 148); 
-    margin: auto;
-    width: 70%; 
+    margin: auto; 
     height: 400px;
 }
 
@@ -88,6 +87,32 @@ main {
     overflow: hidden;
 }
 
+/*/////////////////////////////////////////  PROJECTS  ////////////////////////////*/
+
+.content--projects {
+    border: none;
+    width: 100%;
+}
+
+.content--projects > form > fieldset {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%; 
+}
+
+.projectBtn {
+    color: white;
+    background: black;
+    border: 3px solid white;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 20px;
+    height: 30px; 
+    width: 80px; 
+    justify-self: center;
+}
+
 
 /*////////////////////////////////////////////////////////////////////////////////*/
 @media screen and (min-width: 500px) {
@@ -96,7 +121,15 @@ main {
     }
     .content--home {
         display: block;
-    } 
+    }
+
+    .content--projects > form > fieldset {
+        margin: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 70%;
+    }
 
     .menu--expanded {
         display: none;
