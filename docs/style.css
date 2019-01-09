@@ -94,24 +94,29 @@ main {
     width: 100%;
 }
 
-.content--projects > form > fieldset {
-    display: flex;
-    flex-direction: row;
+form.projects {
+    display: flex; 
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    align-items: center;
     width: 100%; 
 }
+.projects hr {width: 70%;margin: 10px auto;}
 
-.projectBtn {
+.projects label, .projects input, .projects select, .projectBtn {font-size: 25px;}
+#label1 {font-size: 30px; margin: 30px auto 20px}
+#search {width: 70%;}
+
+.projectBtn, select, option {
     color: white;
     background: black;
     border: 3px solid white;
     font-family: 'Libre Baskerville', serif;
-    font-size: 20px;
-    height: 30px; 
-    width: 80px; 
-    justify-self: center;
-}
+    text-align: center;
+    padding: 10px;
+    height: 50px; 
+    width: 100px; 
+} 
 
 
 /*////////////////////////////////////////////////////////////////////////////////*/
@@ -123,13 +128,13 @@ main {
         display: block;
     }
 
-    .content--projects > form > fieldset {
+    form.projects {
         margin: auto;
-        display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        justify-content: space-evenly;
         width: 70%;
     }
+    #search {width: 130px;}
 
     .menu--expanded {
         display: none;

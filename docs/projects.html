@@ -27,24 +27,25 @@
 
     <main role="main">
         <div class="content content--projects"> 
-            <form>
-                <fieldset>
-                 <label class="label1" for="projectName">Project Search</label>   
-                 <input type="text" name="projectName" id="projectName" placeholder="Search for Projects">
-                 <label class="label2" for="year">Year&nbsp;</label>
+            <form class="projects">
+                 <label id="label1" for="search">Project Search</label>   
+                 <input type="text" name="search" id="search" placeholder="Keyword">
+                 <hr class="rwd rwd--hr">
+                 <label id="label2" for="year">Year&nbsp;</label>
                  <select name="year" id="year">
                      <option value="2019">2019</option>
                      <option value="2018">2018</option>
                  </select>
-                 <label for="language" class="label3">Language</label> 
+                 <label for="language" id="label3">Language</label> 
                  <select name="language" id="language">
                      <option value="js">javaScript E6</option>
                      <option value="python">python 3</option>
                      <option value="php">PHP 5</option>
                      <option value="sql">SQL</option>
-                 </select>  
-                 <button class="projectBtn" type="submit">Search</button> 
-                </fieldset>   
+                 </select>
+                 <hr class="rwd rwd--hr">
+                 <br class="rwd rwd--break" /><br class="rwd rwd--break" />  
+                 <button class="projectBtn" type="submit">Search</button>   
             </form>
         </div>
     </main>
