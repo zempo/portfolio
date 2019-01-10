@@ -158,14 +158,18 @@ form.projects {
     /*   Projects  */
 
     form.projects {
+        display: grid;
         margin: auto;
-        flex-direction: row;
-        justify-content: space-evenly;
         width: 70%;
+        grid-template-columns: 1fr 1fr 2fr; 
     }
-    #search {width: 130px;}
-    #label1 {margin: 10px auto;}
-}
+    #search {width: 100%;}
+    #label1 {margin: 1px;}
+    #label2 {margin: 1px;}
+    #year {margin: 1px;}
+    #label3 {margin: 1px;}
+    #language {margin: 1px;}
+} 
 
 @media screen and (min-width: 1000px) {
     h1 {
