@@ -23,6 +23,10 @@ body {
  
 header {
     font-family: SpartanMB;
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -63,13 +67,23 @@ nav {
 .menu--expanded a {
     text-decoration: none;
     color: rgb(200, 211, 206);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
-.menu__item:hover a {
+.menu__item:hover a, .menu__item:active a {
     color: white;
+    font-weight: bold;
 }
 
 main {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;
+    -o-display: flex;
     display: flex;
     width: 100%;
 }
@@ -89,6 +103,14 @@ main {
     display: none;
     font-family: 'Libre Baskerville', serif; 
     overflow: hidden;
+} 
+
+.content--bio__mobile {
+
+}
+
+.content--bio__desktop {
+    display: none;
 }
 
 /*/////////////////////////////////////////  PROJECTS  ////////////////////////////*/
@@ -99,6 +121,10 @@ main {
 }
 
 form.projects {
+    -webkit-display: flex;
+    -moz-display: flex;
+    -ms-display: flex;-
+    -o-display: flex;
     display: flex; 
     flex-direction: column;
     flex-wrap: wrap;
@@ -143,6 +169,50 @@ form.projects {
         text-align: right;
     }
     .menu--icon img {height: 60px; width: 90px; margin-top: 15px}
+    .menu--icon:hover {}
+    .menu__item a {position: relative; width: 100%;}
+    .menu__item a::before {
+        position: absolute;
+        content: '';
+        background: white;
+        width: 0%;
+        height: 4px;
+        bottom: -5px;
+        left: -2px;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+    .menu__item a::after {
+        position: absolute;
+        content: '';
+        background: white;
+        width: 0%;
+        height: 4px;
+        bottom: -5px;
+        right: -2px;
+        -webkit-transition: 0.5s ease;
+        -moz-transition: 0.5s ease;
+        -ms-transition: 0.5s ease;
+        -o-transition: 0.5s ease;
+        transition: 0.5s ease;
+    }
+    .menu__item:hover a::before {
+        width: 50%;
+        -webkit-transform: rotate(30deg);
+        -ms-transform: rotate(30deg);
+        -o-transform: rotate(30deg);
+        transform: translateX(100%);
+    }
+    .menu__item:hover a::after {
+        width: 50%;
+        -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+        -o-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
 
     h1 {
         width: 60%; 
@@ -195,6 +265,10 @@ form.projects {
     }
 
     .menu--expanded {
+        -webkit-display: flex;
+        -moz-display: flex;
+        -ms-display: flex;
+        -o-display: flex;
         display: flex;
         justify-content: space-evenly;
         font-size: 25px;
