@@ -13,11 +13,17 @@ body {
     margin: 0;
     background: black;
     color: white;
+    cursor: url(media/cursor.svg), auto;
 }
 
 .rwd {
     display: block;
 } 
+
+.cursor {
+    height: 50px;
+    width: 50px;
+}
 
 /*///////////////////////////////////////   HOME  /////////////////////////////*/
  
