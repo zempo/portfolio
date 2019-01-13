@@ -7,13 +7,16 @@
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
 </head>
 <body> 
     <header role="banner">
       <h1><a href="index.html">Solomon<br class="rwd rwd--break" /> Zelenko</a></h1>  
       <nav role="site navigation">
-            <div class="menu menu--icon" role="menu icon"><img src="media/icon2.svg" alt="burger icon for hamburger menu"></div>
+            <div class="menu menu--icon" role="menu icons">
+                <img class="dropOpen" src="media/icon2.svg" alt="open hamburger menu">
+                <img class="dropClose" src="media/close.svg" alt="close hamburger menu">
+            </div>
             <!-- &#9776; for standard hamburger menu icon-->
             <ul class="menu menu--expanded" role="menu">
                 <hr class="rwd rwd--hr">
@@ -28,8 +31,16 @@
 
     <main role="main">
         <div class="content content--home">
-            <p style="font-size:25px;text-align:center">Responsive, Interactive Content</p>
-            <p style="font-size:25px;text-align:center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas impedit aliquid, beatae aperiam eius, dolores exercitationem ducimus repellendus ullam harum odio sed, explicabo voluptatibus fugiat illum adipisci perferendis dignissimos accusamus. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque temporibus tempore doloribus nemo quasi! Dolorem ducimus unde, ipsum sunt necessitatibus illum pariatur ipsam repudiandae excepturi deleniti reprehenderit assumenda culpa architecto. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem, eaque.</p>
+            <p style="font-size:25px;text-align:center">Responsive, Interactive About-Me Section</p>
+            <p style="font-size:25px;text-align:center">A number of different-sized planets drawn in canvas. <br><br>
+                A framework would be ideal for this. For working with the extensive dynamic positioning/styling. <br><br>
+                 This content div will be the dynamically sizing &lt;canvas&gt;-- with some planets. 
+                 The mobile version will just contain a simplified bio -- b/c the display will be hidden. A few sentences W/ a footer. <br>
+                 As you use navigation arrows, each "ball" will grow in relative size and move to the center. If it's cued to be in that position.
+                 While others move to their respective positions. Using grid within the framework. </p>
+        </div>
+        <div class="content content--homeMobile">
+            <p>Simple Bio</p>
         </div>
         
     </main>

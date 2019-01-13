@@ -113,9 +113,15 @@ main {
     overflow: hidden;
 } 
 
-.content--bio__mobile {
-
-}
+.content--homeMobile {
+    border: 1px solid rgb(158, 148, 148); 
+    margin: auto;
+    padding: 10px;
+    width: 70%; 
+    height: 400px;
+    font-family: 'Libre Baskerville', serif; 
+    overflow: hidden;
+} 
 
 .content--bio__desktop {
     display: none;
@@ -166,9 +172,17 @@ form.projects {
     .content--home {
         display: block;
     }
+    .content--homeMobile {
+        display: none;
+    }
 
     .menu--expanded {
         display: none;
+        font-size: 20px;
+    }
+
+    .menu--expanded li {
+        margin: 10px 0;
     }
 
     .menu--icon {
@@ -177,7 +191,7 @@ form.projects {
         text-align: right;
     }
     .menu--icon img {height: 60px; width: 90px; margin-top: 15px}
-    .menu--icon:hover img {
+    .menu--icon:hover .dropOpen {
         transform: rotate(90deg) scaleX(0.6) scaleY(0.9);
         -webkit-transition: all 0.5s ease;
         -moz-transition:all 0.5s ease;
@@ -185,6 +199,9 @@ form.projects {
         -o-transition:all 0.5s ease;
         transition:all 0.5s ease;
     }
+    .dropOpen {display: block;}
+    .dropClose {display: none;}
+
     .menu__item a {position: relative; width: 100%;}
     .menu__item a::before {
         position: absolute;
@@ -277,7 +294,9 @@ form.projects {
     }
     .menu--icon {
         display: none;
-    }
+    } 
+
+    .menu--expanded {display: block;}
 
     .menu--expanded {
         -webkit-display: flex;

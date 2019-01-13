@@ -55,12 +55,46 @@ i = 0;
 })();  
 */
 
-let abcdg = 'pie';
+function dropDown() {
+    $('.dropOpen').on('click', function(e) {
+        $('nav').css('margin-right', '3%');
+        $('.dropOpen').css('display', 'none');
+        $('.dropClose').css('display', 'block');
+        $('.menu--expanded').css('display', 'block');
+        $('header').css('margin-bottom', '80px');
+    });
+
+    $('.dropClose').on('click', function(e) {
+        $('nav').css('margin-right', '3%');
+        $('.menu--expanded').css('display', 'none');
+        $('.dropClose').css('display', 'none');
+        $('.dropOpen').css('display', 'block');
+        $('header').css('margin-bottom', '150px');
+    });
+};
+
+$(dropDown);
+
 
 /* Drop-down Menu 
 
+    nav {
+        width: auto;
+        margin-right: 5%;
+    }
+
+        transform: rotate(90deg) scaleX(0.6) scaleY(0.9);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition:all 0.5s ease;
+        -ms-transition:all 0.5s ease;
+        -o-transition:all 0.5s ease;
+        transition:all 0.5s ease;
+
 media/close.svg 
 
+      <nav role="site navigation">
+            <div class="menu menu--icon" role="menu icon"><img src="media/icon2.svg" alt="burger icon for hamburger menu"></div>
+            <!-- &#9776; for standard hamburger menu icon-->
             <ul class="menu menu--expanded" role="menu">
                 <hr class="rwd rwd--hr">
                 <li class="menu__item"><a href="projects.html">Projects</a></li>
@@ -69,9 +103,10 @@ media/close.svg
                 <hr class="rwd rwd--hr">
                 <li class="menu__item"><a href="contact.html">Contact</a></li>
             </ul>
+      </nav>
 */
 
-/* Cursor */
+/* Cursor: use jquery to handle 500 event! with created children */
 
 let cursorArray = ['media/cursor/cur1.svg',
 'media/cursor/cur2.svg',

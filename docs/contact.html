@@ -7,13 +7,16 @@
     <title>My Portfolio</title>
     <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-3.3.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script> 
 </head>
 <body> 
     <header role="banner">
       <h1><a href="index.html">Solomon<br class="rwd rwd--break" /> Zelenko</a></h1>  
       <nav role="site navigation">
-            <div class="menu menu--icon" role="menu icon"><img src="media/icon2.svg" alt="burger icon for hamburger menu"></div>
+            <div class="menu menu--icon" role="menu icons">
+                    <img class="dropOpen" src="media/icon2.svg" alt="open hamburger menu">
+                    <img class="dropClose" src="media/close.svg" alt="close hamburger menu">
+            </div>
             <!-- &#9776; for standard hamburger menu icon--> 
             <ul class="menu menu--expanded" role="menu">
                 <hr class="rwd rwd--hr">
@@ -29,7 +32,8 @@
     <main role="main">
         <div class="content content--contact">
             <p style="font-size:25px;text-align:center">Contact Me</p>
-            <p style="font-size:25px;text-align:center">Icons that fan out/with some css animation</p> 
+            <p style="font-size:25px;text-align:center">List of reasons to contact me + Mailing form! <br>
+            Followed by a number of social media icons that grow slightly bigger on hover.</p> 
         </div>
     </main>
     
