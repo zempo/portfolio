@@ -23,6 +23,8 @@ body {
 .cursor {
     height: 50px;
     width: 50px;
+    border: none;
+    position: absolute;
 }
 
 /*///////////////////////////////////////   HOME  /////////////////////////////*/
@@ -175,7 +177,14 @@ form.projects {
         text-align: right;
     }
     .menu--icon img {height: 60px; width: 90px; margin-top: 15px}
-    .menu--icon:hover {}
+    .menu--icon:hover img {
+        transform: rotate(90deg) scaleX(0.6) scaleY(0.9);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition:all 0.5s ease;
+        -ms-transition:all 0.5s ease;
+        -o-transition:all 0.5s ease;
+        transition:all 0.5s ease;
+    }
     .menu__item a {position: relative; width: 100%;}
     .menu__item a::before {
         position: absolute;
