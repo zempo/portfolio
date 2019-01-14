@@ -137,7 +137,7 @@ main {
 form.projects {
     -webkit-display: flex;
     -moz-display: flex;
-    -ms-display: flex;-
+    -ms-display: flex;
     -o-display: flex;
     display: flex; 
     flex-direction: column;
@@ -145,7 +145,10 @@ form.projects {
     align-items: center;
     width: 100%; 
 }
-.projects hr {width: 70%;margin: 10px auto;}
+.projects hr {
+    width: 70%;
+    margin: 10px auto;
+}
 .projects label, .projects input, .projects select, .projectBtn {font-size: 25px;}
 
 #label1 {font-size: 30px; margin: 30px auto 20px}
