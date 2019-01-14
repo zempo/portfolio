@@ -56,28 +56,35 @@ i = 0;
 */
 
 function dropDown() {
-    $('.dropOpen').on('click', function(e) {
-        $('nav').css('margin-right', '3%');
-        $('.dropOpen').css('display', 'none');
-        $('.dropClose').css('display', 'block');
-        $('.menu--expanded').css('display', 'block');
-        $('header').css('margin-bottom', '80px');
-    });
-
-    $('.dropClose').on('click', function(e) {
-        $('nav').css('margin-right', '3%');
-        $('.menu--expanded').css('display', 'none');
-        $('.dropClose').css('display', 'none');
-        $('.dropOpen').css('display', 'block');
-        $('header').css('margin-bottom', '150px');
-    });
-};
+        $('.dropOpen').on('click', function(e) {
+            $('nav').css('margin-right', '2%');
+            $('.dropOpen').css('display', 'none');
+            $('.dropClose').css('display', 'block');
+            $('.menu--expanded').css('display', 'block');
+            $('header').css('margin-bottom', '80px');
+        });
+    
+        $('.dropClose').on('click', function(e) {
+            $('nav').css('margin-right', '5%');
+            $('.menu--expanded').css('display', 'none');
+            $('.dropClose').css('display', 'none');
+            $('.dropOpen').css('display', 'block');
+            $('header').css('margin-bottom', '150px');
+        });
+}; 
 
 $(dropDown);
 
 
 /* Drop-down Menu 
 
+    } else if ($('body').innerWidth() >= 1000) {
+        $('menu--expanded').on('resize', function() {
+            $('menu--expanded').css('display', 'flex');
+            $('menu--expanded').css('margin', '0 5%');
+        });
+    } 
+    
     nav {
         width: auto;
         margin-right: 5%;
