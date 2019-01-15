@@ -53,6 +53,16 @@ i = 0;
     }
     setTimeout(cursor, 200);
 })();  
+
+function displayResults(responseJson) {
+  console.log(responseJson);
+  //replace the existing image with the new one
+  $('.results-img').replaceWith(
+    `<img src="${responseJson.message}" class="results-img">`
+  )
+  //display the results section
+  $('.results').removeClass('hidden');
+} 
 */
 
 function dropDown() {
