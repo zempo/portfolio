@@ -165,9 +165,7 @@ function animateCursor(circle) {
     } else {
         count = 0;
         circle.setAttribute('src', cursorArray[count]); 
-    }
-
-    console.log(circle.getAttribute('src')); 
+    } 
 }
 // setInterval(animateCursor, 200);
 
@@ -185,7 +183,7 @@ document.onmousemove = function position(e) {
     animateCursor(circle);  
 
 } 
-
+ 
 
 
  
