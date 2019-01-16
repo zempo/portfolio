@@ -176,9 +176,9 @@ function animateCursor(circle) {
 document.onmousemove = function position(e) {
     let circle = document.querySelector('.cursor'); 
     circle.style.position = 'absolute';
-    circle.style.left = e.clientX + 'px';
-    circle.style.right = e.clientX + 'px';
-    circle.style.top = e.clientY + 5 + 'px';
+    circle.style.left = e.clientX + 10 + 'px';
+    circle.style.right = e.clientX + 10 + 'px';
+    circle.style.top = e.clientY + 10 + 'px';
     circle.style.height = '60px';
     circle.style.width = '60px';
 
@@ -187,160 +187,8 @@ document.onmousemove = function position(e) {
 } 
 
 
-/*
 
-document.onmousemove = animateCursor;
-
-let colors = ['media/cursor/cur1.svg',
-'media/cursor/cur2.svg',
-'media/cursor/cur3.svg',
-'media/cursor/cur4.svg',
-'media/cursor/cur5.svg',
-'media/cursor/cur6.svg',
-'media/cursor/cur7.svg',
-'media/cursor/cur8.svg',
-'media/cursor/cur9.svg',
-'media/cursor/cur10.svg',
-'media/cursor/cur11.svg',
-'media/cursor/cur12.svg',
-'media/cursor/cur13.svg',
-'media/cursor/cur14.svg',
-'media/cursor/cur15.svg',
-'media/cursor/cur16.svg',
-'media/cursor/cur17.svg'];
-
-------------------------------
-
-
-let cursorArray = ['media/cursor/cur1.svg',
-'media/cursor/cur2.svg',
-'media/cursor/cur3.svg',
-'media/cursor/cur4.svg',
-'media/cursor/cur5.svg',
-'media/cursor/cur6.svg',
-'media/cursor/cur7.svg',
-'media/cursor/cur8.svg',
-'media/cursor/cur9.svg',
-'media/cursor/cur10.svg',
-'media/cursor/cur11.svg',
-'media/cursor/cur12.svg',
-'media/cursor/cur13.svg',
-'media/cursor/cur14.svg',
-'media/cursor/cur15.svg',
-'media/cursor/cur16.svg',
-'media/cursor/cur17.svg'];
-
-function animateCursor(cursorArray) {
-    let circle = document.createElement('img');
-
-    for (let i = 0; i < cursorArray.length; i++) {
-        circle.setAttribute('src', cursorArray[i]);
-        circle.setAttribute('class', 'cursor');
-
-        document.body.appendChild(circle);
-
-        circle.style.transition = 'all 0.2s ease';
-        circle.style['-webkit-transition'] = 'all 0.2s ease';
-        circle.style['-moz-transition'] = 'all 0.2s ease';
-        circle.style['-ms-transition'] = 'all 0.2s ease';
-        circle.style['-o-transition'] = 'all 0.2s ease';
-    }
-
-    setTimeout(animateCursor, 200);
-}
-
-document.addEventListener('mousemove', animateCursor(cursorArray));
-
-document.onmousemove = function position(e) {
-    let circle = document.querySelector('.cursor');
-    circle.style.position = 'absolute';
-    circle.style.left = e.clientX + 'px';
-    circle.style.right = e.clientX + 'px';
-    circle.style.top = e.clientY + 5 + 'px';
-    circle.style.height = '50px';
-    circle.style.width = '50px';
-
-}
-
---------------------
-
-function animateCursor(e) {
-    let circle = document.createElement('img');
-    circle.setAttribute('class', 'cursor');
-    document.body.appendChild(circle);
-    circle.style.position = 'absolute';
-
-    circle.style.left = e.clientX + 'px';
-    circle.style.top = e.clientY + 5 + 'px';
-
-    var frame = frames[Math.floor(Math.random = frames.length)];
-    circle.setAttribute('src', frame); 
-
-
-    circle.style.transition = 'all 0.2s ease 0s';
-    circle.style['-webkit-transition'] = 'all 0.3s ease 0s';
-    circle.style['-moz-transition'] = 'all 0.3s ease 0s';
-    circle.style['-ms-transition'] = 'all 0.3s ease 0s';
-    circle.style['-o-transition'] = 'all 0.3s ease 0s';
-
-    circle.style.left = circle.offsetLeft - 20 + 'px';
-    circle.style.top = circle.offsetTop - 20 + 'px';
-    circle.style.height = '50px';
-    circle.style.width = '50px';
-    circle.style.opacity = 1;
-
-}
-
----------------
-
-document.onmousemove = animateCursor;
-
-var frames = ['media/cursor/cur1.svg',
-    'media/cursor/cur2.svg',
-    'media/cursor/cur3.svg',
-    'media/cursor/cur4.svg',
-    'media/cursor/cur5.svg',
-    'media/cursor/cur6.svg',
-    'media/cursor/cur7.svg',
-    'media/cursor/cur8.svg',
-    'media/cursor/cur9.svg',
-    'media/cursor/cur10.svg',
-    'media/cursor/cur11.svg',
-    'media/cursor/cur12.svg',
-    'media/cursor/cur13.svg',
-    'media/cursor/cur14.svg',
-    'media/cursor/cur15.svg',
-    'media/cursor/cur16.svg',
-    'media/cursor/cur17.svg'];
-
-function animateCursor(e) {
-    let circle = document.createElement('img');
-    circle.setAttribute('class', 'cursor');
-    document.body.appendChild(circle);
-    circle.style.position = 'absolute';
-
-    circle.style.left = e.clientX + 'px';
-    circle.style.top = e.clientY + 5 + 'px';
-
-    var frame = frames[Math.floor(Math.random = frames.length)];
-    circle.setAttribute('src', frame); 
-
-
-    circle.style.transition = 'all 0.2s ease 0s';
-    circle.style['-webkit-transition'] = 'all 0.3s ease 0s';
-    circle.style['-moz-transition'] = 'all 0.3s ease 0s';
-    circle.style['-ms-transition'] = 'all 0.3s ease 0s';
-    circle.style['-o-transition'] = 'all 0.3s ease 0s';
-
-    circle.style.left = circle.offsetLeft - 20 + 'px';
-    circle.style.top = circle.offsetTop - 20 + 'px';
-    circle.style.height = '50px';
-    circle.style.width = '50px';
-    circle.style.opacity = 1;
-
-}
-
-*/
+ 
 
 
 
