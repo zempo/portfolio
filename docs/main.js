@@ -141,39 +141,50 @@ let cursorArray = ['media/cursor/cur1.svg',
 'media/cursor/cur14.svg',
 'media/cursor/cur15.svg',
 'media/cursor/cur16.svg',
-'media/cursor/cur17.svg'];
+'media/cursor/cur17.svg']; 
 
-function animateCursor(cursorArray) {
-    let circle = document.createElement('img');
+let circle = document.createElement('img');
+document.body.appendChild(circle);
+circle.setAttribute('class', 'cursor');
 
-    for (let i = 0; i < cursorArray.length; i++) {
-        circle.setAttribute('src', cursorArray[i]);
-        circle.setAttribute('class', 'cursor');
+circle.style.transition = 'all 0.2s ease';
+circle.style['-webkit-transition'] = 'all 0.2s ease';
+circle.style['-moz-transition'] = 'all 0.2s ease';
+circle.style['-ms-transition'] = 'all 0.2s ease';
+circle.style['-o-transition'] = 'all 0.2s ease';
 
-        document.body.appendChild(circle);
+function animateCursor(circle) { 
 
-        circle.style.transition = 'all 0.2s ease';
-        circle.style['-webkit-transition'] = 'all 0.2s ease';
-        circle.style['-moz-transition'] = 'all 0.2s ease';
-        circle.style['-ms-transition'] = 'all 0.2s ease';
-        circle.style['-o-transition'] = 'all 0.2s ease';
+    let current = circle.getAttribute('src');
+
+    let count = cursorArray.indexOf(current); 
+
+    if (count < 16) {
+        count++;
+        circle.setAttribute('src', cursorArray[count]); 
+    } else {
+        count = 0;
+        circle.setAttribute('src', cursorArray[count]); 
     }
 
-    setTimeout(animateCursor, 200);
+    console.log(circle.getAttribute('src')); 
 }
+// setInterval(animateCursor, 200);
 
-document.addEventListener('mousemove', animateCursor(cursorArray));
+// document.addEventListener('mousemove', animateCursor()); 
 
 document.onmousemove = function position(e) {
-    let circle = document.querySelector('.cursor');
+    let circle = document.querySelector('.cursor'); 
     circle.style.position = 'absolute';
     circle.style.left = e.clientX + 'px';
     circle.style.right = e.clientX + 'px';
     circle.style.top = e.clientY + 5 + 'px';
-    circle.style.height = '50px';
-    circle.style.width = '50px';
+    circle.style.height = '60px';
+    circle.style.width = '60px';
 
-}
+    animateCursor(circle);  
+
+} 
 
 
 /*
