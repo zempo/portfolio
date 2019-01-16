@@ -13,7 +13,12 @@
 
 // hover/expand solomon zelenko 
 
-/*
+// include slider for cursor speed?
+// slider to change amount of color variation 
+// include enable/disable cursor add-on
+// enable disable cursor 
+
+/*  
 
 
 function displayResults(responseJson) {
