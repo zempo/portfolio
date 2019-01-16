@@ -17,20 +17,8 @@
 // slider to change amount of color variation 
 // include enable/disable cursor add-on
 // enable disable cursor 
+// simply hide/unhide class 
 
-/*  
-
-
-function displayResults(responseJson) {
-  console.log(responseJson);
-  //replace the existing image with the new one
-  $('.results-img').replaceWith(
-    `<img src="${responseJson.message}" class="results-img">`
-  )
-  //display the results section
-  $('.results').removeClass('hidden');
-} 
-*/
 
 function dropDown() {
         $('.dropOpen').on('click', function(e) {
@@ -117,14 +105,15 @@ circle.setAttribute('class', 'cursor');
 circle.style.position = 'absolute';
 // set attribute for easier reference
 // and set image position to absolute 
-
-circle.style.transition = 'all 0.2s ease';
-circle.style['-webkit-transition'] = 'all 0.2s ease';
-circle.style['-moz-transition'] = 'all 0.2s ease';
-circle.style['-ms-transition'] = 'all 0.2s ease';
-circle.style['-o-transition'] = 'all 0.2s ease';
+ 
+circle.style.transition = 'all 0.1s ease';
+circle.style['-webkit-transition'] = 'all 0.1s ease';
+circle.style['-moz-transition'] = 'all 0.1s ease';
+circle.style['-ms-transition'] = 'all 0.1s ease';
+circle.style['-o-transition'] = 'all 0.1s ease';
 // include all vendor prefixes 
 // you can customize the animation transitions
+// make transition length `0.${speedSlider}`
 
 function animateCursor(circle) { 
 
