@@ -14,45 +14,7 @@
 // hover/expand solomon zelenko 
 
 /*
-function animateCursor(event) {
-    var circle = document.createElement('img');
 
-    for (i = 0; i < cursorArray.length; i++) {
-        circle.setAttribute('src', cursorArray[i]);
-        circle.setAttribute('class', 'cursor');
-
-        document.body.appendChild(circle);
-
-        circle.style.transition = 'all 1s ease'; 
-        circle.style['-webkit-transition'] = 'all 0.5s ease';
-        circle.style['-moz-transition'] = 'all 0.5s ease';
-        circle.style['-ms-transition'] = 'all 0.5s ease';
-        circle.style['-o-transition'] = 'all 0.5s ease';
-    }
-
- //   circle.style.left = event.clientX + 'px';
-//    circle.style.top = event.clientY + 'px';
-
-   // setTimeout(animateCursor, 200);
-}
-
-.cursor {
-    height: 50px;
-    width: 50px;
-}
-
-<img class="cursor" src="media/cursor/cur1.svg" alt="" srcset="">
-
-i = 0;
-(function cursor() {
-    html.style.cursor = cursorArray[i]; 
-    i++;
-    if(i == cursorArray.length) {
-        i = 0;
-        // reset to 0
-    }
-    setTimeout(cursor, 200);
-})();  
 
 function displayResults(responseJson) {
   console.log(responseJson);
@@ -123,7 +85,6 @@ media/close.svg
       </nav>
 */
 
-/* Cursor: use jquery to handle 500 event! with created children */
 
 let cursorArray = ['media/cursor/cur1.svg',
 'media/cursor/cur2.svg',
@@ -142,16 +103,23 @@ let cursorArray = ['media/cursor/cur1.svg',
 'media/cursor/cur15.svg',
 'media/cursor/cur16.svg',
 'media/cursor/cur17.svg']; 
+// array of animation frames
 
 let circle = document.createElement('img');
+// initialize & append image in DOM
 document.body.appendChild(circle);
 circle.setAttribute('class', 'cursor');
+circle.style.position = 'absolute';
+// set attribute for easier reference
+// and set image position to absolute 
 
 circle.style.transition = 'all 0.2s ease';
 circle.style['-webkit-transition'] = 'all 0.2s ease';
 circle.style['-moz-transition'] = 'all 0.2s ease';
 circle.style['-ms-transition'] = 'all 0.2s ease';
 circle.style['-o-transition'] = 'all 0.2s ease';
+// include all vendor prefixes 
+// you can customize the animation transitions
 
 function animateCursor(circle) { 
 
@@ -166,14 +134,15 @@ function animateCursor(circle) {
         count = 0;
         circle.setAttribute('src', cursorArray[count]); 
     } 
-}
-// setInterval(animateCursor, 200);
-
-// document.addEventListener('mousemove', animateCursor()); 
+} 
+// define current .circle image source
+// index/store the array position of the image source
+// increment the index to iterate through each 
+// frame in the cursorArray. While less than the array length - 1
+// Reset the count to 0.
 
 document.onmousemove = function position(e) {
     let circle = document.querySelector('.cursor'); 
-    circle.style.position = 'absolute';
     circle.style.left = e.clientX + 10 + 'px';
     circle.style.right = e.clientX + 10 + 'px';
     circle.style.top = e.clientY + 10 + 'px';
@@ -183,6 +152,11 @@ document.onmousemove = function position(e) {
     animateCursor(circle);  
 
 } 
+// as the mouse moves, passing this event through position function
+// locally redefine the circle variable
+// position the image relative to the location of the cursor movement event
+// call the animate circle function
+// pass the locally redefined circle variable through the function 
  
 
 
