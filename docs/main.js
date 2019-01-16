@@ -40,6 +40,8 @@ function dropDown() {
 
 $(dropDown);
 
+// convert this to vanilla javascript 
+
 
 /* Drop-down Menu 
 
@@ -137,11 +139,10 @@ function animateCursor(circle) {
 
 document.onmousemove = function position(e) {
     let circle = document.querySelector('.cursor'); 
-    circle.style.left = e.clientX + 10 + 'px';
-    circle.style.right = e.clientX + 10 + 'px';
-    circle.style.top = e.clientY + 10 + 'px';
-    circle.style.height = '60px';
-    circle.style.width = '60px';
+    circle.style.left = e.clientX - 30 + 'px';
+    circle.style.top = e.clientY + 5 + 'px';
+    circle.style.height = '70px';
+    circle.style.width = '70px';
 
     animateCursor(circle);  
 
