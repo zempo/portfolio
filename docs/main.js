@@ -18,6 +18,10 @@
 // include enable/disable cursor add-on
 // enable disable cursor 
 // simply hide/unhide class 
+// make hideable sidebar 
+
+
+
 
 
 function dropDown() {
@@ -28,6 +32,10 @@ function dropDown() {
             $('.menu--expanded').css('display', 'block');
             $('header').css('margin-bottom', '80px');
         });
+
+        $( window ).on('resize', function(e) {
+            location.reload();
+        });
     
         $('.dropClose').on('click', function(e) {
             $('nav').css('margin-right', '5%');
@@ -35,37 +43,14 @@ function dropDown() {
             $('.dropClose').css('display', 'none');
             $('.dropOpen').css('display', 'block');
             $('header').css('margin-bottom', '150px');
+            location.reload();
         });
-}; 
 
+};  
+ 
 $(dropDown);
 
-// convert this to vanilla javascript 
-
-
-/* Drop-down Menu 
-
-    } else if ($('body').innerWidth() >= 1000) {
-        $('menu--expanded').on('resize', function() {
-            $('menu--expanded').css('display', 'flex');
-            $('menu--expanded').css('margin', '0 5%');
-        });
-    } 
-    
-    nav {
-        width: auto;
-        margin-right: 5%;
-    }
-
-        transform: rotate(90deg) scaleX(0.6) scaleY(0.9);
-        -webkit-transition: all 0.5s ease;
-        -moz-transition:all 0.5s ease;
-        -ms-transition:all 0.5s ease;
-        -o-transition:all 0.5s ease;
-        transition:all 0.5s ease;
-
-media/close.svg 
-
+/*
       <nav role="site navigation">
             <div class="menu menu--icon" role="menu icon"><img src="media/icon2.svg" alt="burger icon for hamburger menu"></div>
             <!-- &#9776; for standard hamburger menu icon-->
@@ -77,8 +62,8 @@ media/close.svg
                 <hr class="rwd rwd--hr">
                 <li class="menu__item"><a href="contact.html">Contact</a></li>
             </ul>
-      </nav>
-*/
+      </nav> 
+*/ 
 
 
 let cursorArray = ['media/cursor/cur1.svg',
@@ -145,7 +130,7 @@ document.onmousemove = function position(e) {
     circle.style.width = '70px';
 
     animateCursor(circle);  
-
+ 
 } 
 // as the mouse moves, passing this event through position function
 // locally redefine the circle variable

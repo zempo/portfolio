@@ -201,7 +201,7 @@ form.projects {
     }
     .menu--icon img {height: 60px; width: 90px; margin-top: 15px}
     .menu--icon:hover .dropOpen {
-        transform: rotate(90deg) scaleX(0.6) scaleY(0.9);
+        transform: scaleX(1.1) scaleY(1.1);
         -webkit-transition: all 0.5s ease;
         -moz-transition:all 0.5s ease;
         -ms-transition:all 0.5s ease;
