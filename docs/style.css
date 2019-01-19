@@ -134,6 +134,11 @@ main {
     width: 100%;
 }
 
+.content--works {
+    width: 100%;
+    margin-left: 20%; 
+}
+
 form.projects {
     -webkit-display: flex;
     -moz-display: flex;
