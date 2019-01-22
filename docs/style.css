@@ -138,7 +138,7 @@ main {
 .content--homeMobile p {
     margin: 0; 
 }
-.content--homeMobile .sectionM--bio__pic {
+.sectionM--head .sectionM--bio__pic {
     border-top: 2px solid black;
     border-radius: 50%;  
     margin: 5px auto;
@@ -152,6 +152,7 @@ main {
 .sectionM--head {text-align: center;}
 .hr--bio {
     width: 130px;
+    margin-bottom: 20px;
 }
 .sectionM:hover .hr--bio {
     transform: scaleX(2.5);
@@ -160,7 +161,7 @@ main {
     -ms-transition:all 0.5s ease;
     -o-transition:all 0.5s ease;
     transition:all 0.5s ease;    
-} 
+}     
  
 /*/////////////////////////////////////////  PROJECTS  ////////////////////////////*/
 
