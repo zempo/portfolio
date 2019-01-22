@@ -28,6 +28,12 @@ body {
 }
 h2 {
     font-family: SpartanMB;
+    font-size: 30px; 
+    margin: 10px auto;
+}
+p {
+    font-size: 20px;
+    text-align: justify;
 }
 
 /*///////////////////////////////////////   HOME  /////////////////////////////*/
@@ -112,7 +118,7 @@ main {
 } 
 
 .content--homeMobile {
-    border:1px solid rgb(158, 148, 148);
+    border:none;
     margin: auto;
     padding: 20px;
     width: 100%; 
