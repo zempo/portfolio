@@ -92,11 +92,6 @@ circle.setAttribute('class', 'cursor');
 circle.style.position = 'absolute';
 // set attribute for easier reference
 // and set image position to absolute 
-  
-
-// include all vendor prefixes 
-// you can customize the animation transitions
-// make transition length `0.${speedSlider}`
 
 function animateCursor(circle) { 
 
@@ -124,11 +119,15 @@ document.onmousemove = function position(e) {
     circle.style.top = e.pageY + 5 + 'px';
     circle.style.height = '70px';
     circle.style.width = '70px';
-    circle.style.transition = 'all 0.1s ease';
-    circle.style['-webkit-transition'] = 'all 0.1s ease';
-    circle.style['-moz-transition'] = 'all 0.1s ease';
-    circle.style['-ms-transition'] = 'all 0.1s ease';
-    circle.style['-o-transition'] = 'all 0.1s ease';
+    circle.style.transition = 'all 0.15s ease';
+    circle.style['-webkit-transition'] = 'all 0.15s ease';
+    circle.style['-moz-transition'] = 'all 0.15s ease';
+    circle.style['-ms-transition'] = 'all 0.15s ease';
+    circle.style['-o-transition'] = 'all 0.15s ease'; 
+
+   // include all vendor prefixes 
+   // you can customize the animation transitions
+   // make transition length `0.${speedSlider}`
 
     animateCursor(circle);  
  
@@ -174,11 +173,11 @@ menu.onmouseover = function position4(e) {
     circle.style['-moz-transform'] = 'scaleX(0) scaleY(0)';
     circle.style['-ms-transform'] = 'scaleX(0) scaleY(0)';
     circle.style['-o-transform'] = 'scaleX(0) scaleY(0)';
-    circle.style.transition = 'transform 0.3s ease';
-    circle.style['-webkit-transition'] = '-webkit-transform 0.3s ease';
-    circle.style['-moz-transition'] = '-moz-transform 0.3s ease';
-    circle.style['-ms-transition'] = '-ms-transform 0.3s ease'; 
-    circle.style['-o-transition'] = '-o-transform 0.3s ease';
+    circle.style.transition = 'transform 0.5s ease';
+    circle.style['-webkit-transition'] = '-webkit-transform 0.5s ease';
+    circle.style['-moz-transition'] = '-moz-transform 0.5s ease';
+    circle.style['-ms-transition'] = '-ms-transform 0.5s ease'; 
+    circle.style['-o-transition'] = '-o-transform 0.5s ease';
 } 
 menu.onmouseout = function position5(e) {
     let circle = document.querySelector('.cursor');
@@ -187,13 +186,13 @@ menu.onmouseout = function position5(e) {
     circle.style['-moz-transform'] = 'scaleX(1) scaleY(1)';
     circle.style['-ms-transform'] = 'scaleX(1) scaleY(1)';
     circle.style['-o-transform'] = 'scaleX(1) scaleY(1)';
-    circle.style.transition = 'transform 0.3s ease';
-    circle.style['-webkit-transition'] = '-webkit-transform 0.3s ease';
-    circle.style['-moz-transition'] = '-moz-transform 0.3s ease';
-    circle.style['-ms-transition'] = '-ms-transform 0.3s ease'; 
-    circle.style['-o-transition'] = '-o-transform 0.3s ease';
+    circle.style.transition = 'transform 0.5s ease';
+    circle.style['-webkit-transition'] = '-webkit-transform 0.5s ease';
+    circle.style['-moz-transition'] = '-moz-transform 0.5s ease';
+    circle.style['-ms-transition'] = '-ms-transform 0.5s ease'; 
+    circle.style['-o-transition'] = '-o-transform 0.5s ease';
 } 
- 
+  
 /*
     transform: scaleX(2.5);
     -webkit-transition: all 0.5s ease;

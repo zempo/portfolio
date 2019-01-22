@@ -172,7 +172,7 @@ main {
 }
 
 .content--projects__results {
-    margin-top: 200px;
+    margin-top: 215px;
     height: auto;
     padding: 20px;
     border: none;
@@ -240,20 +240,20 @@ form.projects {
     }
     .menu--icon img {height: 60px; width: 90px; margin-top: 15px}
     .menu--icon:hover .dropOpen {
-        transform: scaleX(1.2) scaleY(1.2);
-        -webkit-transition: all 0.5s ease-in;
-        -moz-transition:all 0.5s ease-in;
-        -ms-transition:all 0.5s ease-in;
-        -o-transition:all 0.5s ease-in;
-        transition:all 0.5s ease-in;
-    }
+        transform: scaleX(1.3) scaleY(1.05);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition:all 0.5s ease-in-out;
+        -ms-transition:all 0.5s ease-in-out;
+        -o-transition:all 0.5s ease-in-out;
+        transition:all 0.5s ease-in-out;
+    } 
     .menu--icon:hover .dropClose {
-        transform: scaleX(0.9) scaleY(0.9);
-        -webkit-transition: all 0.5s ease;
-        -moz-transition:all 0.5s ease;
-        -ms-transition:all 0.5s ease;
-        -o-transition:all 0.5s ease;
-        transition:all 0.5s ease;
+        transform: scaleX(0.95) scaleY(0.95) rotate(45deg);
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition:all 0.5s ease-out;
+        -ms-transition:all 0.5s ease-out;
+        -o-transition:all 0.5s ease-out;
+        transition:all 0.5s ease-out;
     } 
     .dropOpen {display: block;}
     .dropClose {display: none;}
