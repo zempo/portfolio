@@ -136,22 +136,24 @@ main {
     margin-bottom: 5px;
 }
 .content--homeMobile p {
-    margin: 0;
+    margin: 0; 
 }
 .content--homeMobile .sectionM--bio__pic {
-    float: left; 
     border-top: 2px solid black;
-    border-radius: 50%; 
-    margin-right: 6%; 
+    border-radius: 50%;  
+    margin: 5px auto;
 }
 .content--homeMobile p.one {
     font-family: SpartanMB; 
     font-size: 20px; 
+    margin-top: 20px;
+    text-align: center;
 }
+.sectionM--head {text-align: center;}
 .hr--bio {
     width: 130px;
 }
-.sectionM--bio:hover .hr--bio {
+.sectionM:hover .hr--bio {
     transform: scaleX(2.5);
     -webkit-transition: all 0.5s ease;
     -moz-transition:all 0.5s ease;
@@ -172,7 +174,7 @@ main {
 }
 
 .content--projects__results {
-    margin-top: 215px;
+    margin-top: 225px;
     height: auto;
     padding: 20px;
     border: none;
