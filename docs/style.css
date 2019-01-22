@@ -15,7 +15,10 @@ body {
     color: white;
     cursor: url(media/cursor2.svg), auto;
 }
-
+h1 a {
+    cursor: url(media/cursor3.svg), auto;
+}
+ 
 .rwd {
     display: block;
 }  
@@ -34,6 +37,7 @@ h2 {
 p {
     font-size: 20px;
     text-align: justify;
+    font-family: 'Libre Baskerville', serif;
 }
 
 /*///////////////////////////////////////   HOME  /////////////////////////////*/
@@ -113,7 +117,8 @@ main {
     width: 70%; 
     height: 400px;
     display: none;
-    font-family: 'Libre Baskerville', serif; 
+    font-family: 'Libre Baskerville', serif;
+    font-family: 'PT Sans', sans-serif; 
     overflow: hidden;
 } 
 
@@ -122,18 +127,39 @@ main {
     margin: auto;
     padding: 20px;
     width: 100%; 
-    height: 400px;
-    font-family: 'Libre Baskerville', serif; 
+    height: auto;
+    font-family: 'Libre Baskerville', serif;
     overflow: hidden;
 } 
 .content--homeMobile h2 {
     text-align: center;
+    margin-bottom: 5px;
 }
-
-.content--bio__desktop {
-    display: none;
+.content--homeMobile p {
+    margin: 0;
 }
-
+.content--homeMobile .sectionM--bio__pic {
+    float: left; 
+    border-top: 2px solid black;
+    border-radius: 50%; 
+    margin-right: 6%; 
+}
+.content--homeMobile p.one {
+    font-family: SpartanMB; 
+    font-size: 20px; 
+}
+.hr--bio {
+    width: 130px;
+}
+.sectionM--bio:hover .hr--bio {
+    transform: scaleX(2.5);
+    -webkit-transition: all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    -ms-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    transition:all 0.5s ease;    
+} 
+ 
 /*/////////////////////////////////////////  PROJECTS  ////////////////////////////*/
 
 .content--projects {
@@ -146,7 +172,7 @@ main {
 }
 
 .content--projects__results {
-    margin-top: 180px;
+    margin-top: 200px;
     height: auto;
     padding: 20px;
     border: none;
@@ -167,9 +193,9 @@ form.projects {
     width: 70%;
     margin: 10px auto;
 }
-.projects label, .projects input, .projects select, .projectBtn {font-size: 25px;}
+.projects label, .projects input, .projects select, .projectBtn {font-size: 25px;font-family: SpartanMB;}
 
-#label1 {font-size: 30px; margin: 30px auto 20px}
+#label1 {font-size: 30px; margin: 30px auto 20px;}
 #label3, #label4 {margin: 10px auto 10px}
 #search {width: 70%; text-align: center}
 
@@ -182,7 +208,7 @@ form.projects {
     padding: 10px;
     height: 60px; 
 } 
-.projectBtn {width: 70%; height: 100px;border-radius: 2%; border: 4px double white} 
+.projectBtn {width: 70%; height: 100px;border-radius: 2%; border: 4px double white; font-family: SpartanMB; font-size: 40px; } 
 .projectBtn:hover {background: white; color: black;}
 .projectBtn:active {background: black; color: white;}
 
@@ -215,6 +241,14 @@ form.projects {
     .menu--icon img {height: 60px; width: 90px; margin-top: 15px}
     .menu--icon:hover .dropOpen {
         transform: scaleX(1.1) scaleY(1.1);
+        -webkit-transition: all 0.5s ease;
+        -moz-transition:all 0.5s ease;
+        -ms-transition:all 0.5s ease;
+        -o-transition:all 0.5s ease;
+        transition:all 0.5s ease;
+    }
+    .menu--icon:hover .dropClose {
+        transform: scaleX(0.9) scaleY(0.9);
         -webkit-transition: all 0.5s ease;
         -moz-transition:all 0.5s ease;
         -ms-transition:all 0.5s ease;
@@ -313,7 +347,7 @@ form.projects {
     #language {margin: 1px; grid-area: s2; text-align-last: center;}
     #label4 {margin: 1px; grid-area: l4}
     #scope {margin: 1px; grid-area: s3; text-align-last: center;} 
-    .projectBtn {margin: 1px; grid-area: btn; width: 100%; height: 60px;}
+    .projectBtn {margin: 1px; grid-area: btn; width: 100%; height: 60px; font-size: 25px;}
 }  
 
 @media screen and (min-width: 1000px) {
