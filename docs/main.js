@@ -93,11 +93,7 @@ circle.style.position = 'absolute';
 // set attribute for easier reference
 // and set image position to absolute 
   
-circle.style.transition = 'all 0.1s ease';
-circle.style['-webkit-transition'] = 'all 0.1s ease';
-circle.style['-moz-transition'] = 'all 0.1s ease';
-circle.style['-ms-transition'] = 'all 0.1s ease';
-circle.style['-o-transition'] = 'all 0.1s ease';
+
 // include all vendor prefixes 
 // you can customize the animation transitions
 // make transition length `0.${speedSlider}`
@@ -124,10 +120,15 @@ function animateCursor(circle) {
 
 document.onmousemove = function position(e) {
     let circle = document.querySelector('.cursor'); 
-    circle.style.left = e.clientX - 30 + 'px';
-    circle.style.top = e.clientY + 5 + 'px';
+    circle.style.left = e.pageX - 30 + 'px';
+    circle.style.top = e.pageY + 5 + 'px';
     circle.style.height = '70px';
     circle.style.width = '70px';
+    circle.style.transition = 'all 0.1s ease';
+    circle.style['-webkit-transition'] = 'all 0.1s ease';
+    circle.style['-moz-transition'] = 'all 0.1s ease';
+    circle.style['-ms-transition'] = 'all 0.1s ease';
+    circle.style['-o-transition'] = 'all 0.1s ease';
 
     animateCursor(circle);  
  

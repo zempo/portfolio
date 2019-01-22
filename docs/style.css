@@ -206,7 +206,7 @@ form.projects {
     font-family: 'Libre Baskerville', serif;
     text-align: center;
     padding: 10px;
-    height: 60px; 
+    height: 70px; 
 } 
 .projectBtn {width: 70%; height: 100px;border-radius: 2%; border: 4px double white; font-family: SpartanMB; font-size: 40px; } 
 .projectBtn:hover {background: white; color: black;}
@@ -240,12 +240,12 @@ form.projects {
     }
     .menu--icon img {height: 60px; width: 90px; margin-top: 15px}
     .menu--icon:hover .dropOpen {
-        transform: scaleX(1.1) scaleY(1.1);
-        -webkit-transition: all 0.5s ease;
-        -moz-transition:all 0.5s ease;
-        -ms-transition:all 0.5s ease;
-        -o-transition:all 0.5s ease;
-        transition:all 0.5s ease;
+        transform: scaleX(1.2) scaleY(1.2);
+        -webkit-transition: all 0.5s ease-in;
+        -moz-transition:all 0.5s ease-in;
+        -ms-transition:all 0.5s ease-in;
+        -o-transition:all 0.5s ease-in;
+        transition:all 0.5s ease-in;
     }
     .menu--icon:hover .dropClose {
         transform: scaleX(0.9) scaleY(0.9);
@@ -254,7 +254,7 @@ form.projects {
         -ms-transition:all 0.5s ease;
         -o-transition:all 0.5s ease;
         transition:all 0.5s ease;
-    }
+    } 
     .dropOpen {display: block;}
     .dropClose {display: none;}
 
