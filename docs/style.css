@@ -165,31 +165,7 @@ main {
     transition:all 0.5s ease;    
 }     
 /*/////////////////////////////////////////LIGHTBOX MENU ////////////////////*/
-   /*
-    .menu--icon .dropClose {
-        transform: scaleX(0.95) scaleY(0.95) rotate(45deg);
-        -webkit-transform: scaleX(0.95) scaleY(0.95) rotate(45deg);
-        -ms-transform: scaleX(0.95) scaleY(0.95) rotate(45deg);
-        -o-transform: scaleX(0.95) scaleY(0.95) rotate(45deg);
-        -webkit-transition: all 0.5s ease-out;
-        -moz-transition:all 0.5s ease-out;
-        -ms-transition:all 0.5s ease-out;
-        -o-transition:all 0.5s ease-out;
-        transition:all 0.5s ease-out;
-    } 
-    .menu--icon:hover .dropClose {
-        transform: scaleX(1) scaleY(1) rotate(-45deg);
-        -webkit-transform: scaleX(1) scaleY(1) rotate(-45deg);
-        -ms-transform: scaleX(1) scaleY(1) rotate(-45deg);
-        -o-transform: scaleX(1) scaleY(1) rotate(-45deg);
-        -webkit-transition: all 0.5s ease-out;
-        -moz-transition:all 0.5s ease-out;
-        -ms-transition:all 0.5s ease-out;
-        -o-transition:all 0.5s ease-out;
-        transition:all 0.5s ease-out;
-    }
-    .dropClose {display: none;}
-
+/*
         <a href="#lightbox-link">
         <img class="dropOpen" src="media/icon2.svg" alt="open hamburger menu">  
         </a>    
@@ -205,7 +181,7 @@ main {
             </figcaption>
         </figure>
     </div>
-    */ 
+*/ 
 .lightbox {
     display: none;
     font-family: SpartanMB;
@@ -215,26 +191,105 @@ main {
     position: relative;
     color: rgb(200, 211, 206);
 }
+
+.lightbox:target .light-item {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInX;
+    animation-name: flipInX;
+    -webkit-animation-duration: 2.5s;
+    animation-duration: 2.5s;
+}
+
+@-webkit-keyframes flipInX {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+      transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+
+@keyframes flipInX {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  60% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+    opacity: 1;
+  }
+
+  80% {
+    -webkit-transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+  }
+}
 .lightbox .light-item:hover {
     color: white;
     font-weight: 500;
-    -webkit-transition: all 1s ease-in;
-    -moz-transition: all 1s ease-in;
-    -ms-transition: all 1s ease-in;
-    -o-transition: all 1s ease-in;
-    transition: all 1s ease-in;
 }
+
 .lightbox .light-item:hover::before {
+    transform: scaleX(1.5) scaleY(1.5);
+    -webkit-transform: scaleX(1.5) scaleY(1.5);
+    -ms-transform: scaleX(1.5) scaleY(1.5);
+    -o-transform: scaleX(1.5) scaleY(1.5);
     position: absolute;
     display: inline;
-    left: -20%;
-    content: "{";
+    left: -7rem;
+    content: "<"; 
 }
 .lightbox .light-item:hover::after {
+    transform: scaleX(1.5) scaleY(1.5);
+    -webkit-transform: scaleX(1.5) scaleY(1.5);
+    -ms-transform: scaleX(1.5) scaleY(1.5);
+    -o-transform: scaleX(1.5) scaleY(1.5);
     position: absolute;
     display: inline;
-    right: -20%;
-    content: "}";
+    right: -7rem;
+    content: ">";
 }
  
 .lightbox:target {

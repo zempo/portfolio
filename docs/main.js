@@ -19,54 +19,6 @@
 // enable disable cursor 
 // simply hide/unhide class 
 // make hideable sidebar 
-
-
-
- 
-/*
-function dropDown() {
-        $('.dropOpen').on('click', function(e) {
-            $('nav').css('margin-right', '2%');
-            $('.dropOpen').css('display', 'none');
-            $('.dropClose').css('display', 'block');
-            $('.menu--expanded').css('display', 'block');
-            $('header').css('margin-bottom', '80px');
-        });
-
-        $( window ).on('resize', function(e) {
-            location.reload();
-        });
-    
-        $('.dropClose').on('click', function(e) {
-            $('nav').css('margin-right', '5%');
-            $('.menu--expanded').css('display', 'none');
-            $('.dropClose').css('display', 'none');
-            $('.dropOpen').css('display', 'block');
-            $('header').css('margin-bottom', '150px');
-            location.reload();
-        });
-
-};  
- 
-$(dropDown);
-*/
-
-/*
-      <nav role="site navigation">
-            <div class="menu menu--icon" role="menu icon"><img src="media/icon2.svg" alt="burger icon for hamburger menu"></div>
-            <!-- &#9776; for standard hamburger menu icon-->
-            <ul class="menu menu--expanded" role="menu">
-                <hr class="rwd rwd--hr">
-                <li class="menu__item"><a href="projects.html">Projects</a></li>
-                <hr class="rwd rwd--hr">
-                <li class="menu__item"><a href="works.html">Other_Works</a></li>
-                <hr class="rwd rwd--hr">
-                <li class="menu__item"><a href="contact.html">Contact</a></li>
-            </ul>
-      </nav> 
-*/ 
-
-
 let cursorArray = ['media/cursor/cur1.svg',
 'media/cursor/cur2.svg',
 'media/cursor/cur3.svg',
