@@ -54,12 +54,18 @@ function animateCursor(circle) {
 
     if (count < 16) {
         count++;
-        circle.setAttribute('src', cursorArray[count]); 
+
+        setTimeout(function() {
+            circle.setAttribute('src', cursorArray[count]);
+        }, 200);
     } else {
         count = 0;
-        circle.setAttribute('src', cursorArray[count]); 
+
+        setTimeout(function() {
+            circle.setAttribute('src', cursorArray[count]);
+        }, 200);
     } 
-} 
+}  
 // define current .circle image source
 // index/store the array position of the image source
 // increment the index to iterate through each 
