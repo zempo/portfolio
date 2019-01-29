@@ -83,7 +83,7 @@ let cursorArray = ['media/cursor/cur1.svg',
 'media/cursor/cur14.svg',
 'media/cursor/cur15.svg',
 'media/cursor/cur16.svg',
-'media/cursor/cur17.svg']; 
+'media/cursor/cur17.svg'];  
 // array of animation frames
  
 let circle = document.createElement('img');
