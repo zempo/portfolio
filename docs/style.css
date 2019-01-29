@@ -198,41 +198,45 @@ main {
         <figure>
             <a href="#" class="close"></a>
             <figcaption>
-                <ul class="menu menu--lightbox">
-                    <1i><a href="index.html">Home</a></1i>
-                    <1i><a href="index.html">Projects</a></1i>
-                    <1i><a href="index.html">Events</a></1i>
-                    <1i><a href="index.html">Contact</a></1i>
-                </ul>
+                    <a class="light-item" href="index.html">Home</a>
+                    <a class="light-item" href="projects.html">Projects</a>
+                    <a class="light-item" href="works.html">Events</a>
+                    <a class="light-item" href="contact.html">Contact</a>
             </figcaption>
         </figure>
     </div>
-    */
+    */ 
 .lightbox {
     display: none;
     font-family: SpartanMB;
 }
-.lightbox a {
+.lightbox .light-item {
     text-decoration: none;
     position: relative;
     color: rgb(200, 211, 206);
 }
-.lightbox a:hover {
+.lightbox .light-item:hover {
     color: white;
+    font-weight: 500;
+    -webkit-transition: all 1s ease-in;
+    -moz-transition: all 1s ease-in;
+    -ms-transition: all 1s ease-in;
+    -o-transition: all 1s ease-in;
+    transition: all 1s ease-in;
 }
-.lightbox a:hover::before {
+.lightbox .light-item:hover::before {
     position: absolute;
     display: inline;
-    left: -25%;
-    content: "{"
+    left: -20%;
+    content: "{";
 }
-.lightbox a:hover::after {
+.lightbox .light-item:hover::after {
     position: absolute;
     display: inline;
-    right: -25%;
-    content: "}"
+    right: -20%;
+    content: "}";
 }
-
+ 
 .lightbox:target {
     position: absolute;
     /* might change to fixed */
@@ -269,6 +273,7 @@ main {
 .lightbox .close {
     position: relative;
     display: block;
+    color: white;
 }  
 
 .close:hover::after {
