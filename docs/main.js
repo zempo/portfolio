@@ -22,8 +22,8 @@
 
 
 
-
-
+ 
+/*
 function dropDown() {
         $('.dropOpen').on('click', function(e) {
             $('nav').css('margin-right', '2%');
@@ -49,6 +49,7 @@ function dropDown() {
 };  
  
 $(dropDown);
+*/
 
 /*
       <nav role="site navigation">

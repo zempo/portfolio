@@ -15,10 +15,12 @@
       
       <nav role="site navigation">
             <div class="menu menu--icon" role="menu icons">
-                    <img class="dropOpen" src="media/icon2.svg" alt="open hamburger menu">
-                    <img class="dropClose" src="media/close.svg" alt="close hamburger menu">
+                <a href="#lightbox-link">
+                <img class="dropOpen" src="media/icon2.svg" alt="open hamburger menu">  
+                </a>              
             </div>
-            <!-- &#9776; for standard hamburger menu icon-->
+            <!-- &#9776; for standard hamburger menu icon
+            <img class="dropClose" src="media/close.svg" alt="close hamburger menu"> -->
             <ul class="menu menu--expanded" role="menu">
                 <hr class="rwd rwd--hr">
                 <li class="menu__item"><a href="projects.html">Projects</a></li>
@@ -29,7 +31,19 @@
                 <hr class="rwd rwd--hr">
             </ul>
       </nav>
-    </header> 
+    </header>  
+
+    <div class="lightbox" id="lightbox-link" role="lightbox menu">
+        <figure>
+            <a href="#" class="close"></a>
+            <figcaption>
+                    <a href="index.html">Home</a>
+                    <a href="projects.html">Projects</a>
+                    <a href="works.html">Events</a>
+                    <a href="contact.html">Contact</a>
+            </figcaption>
+        </figure>
+    </div>
 
     <main role="main">
         <div class="content content--projects"> 
