@@ -191,7 +191,7 @@ main {
     position: relative;
     color: rgb(200, 211, 206);
 }
-
+ 
 .lightbox:target .light-item {
     -webkit-backface-visibility: visible !important;
     backface-visibility: visible !important;
