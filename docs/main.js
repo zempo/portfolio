@@ -76,14 +76,13 @@ document.onmousemove = function position(e) {
     let circle = document.querySelector('.cursor'); 
     circle.style.left = e.pageX - 30 + 'px';
     circle.style.top = e.pageY + 5 + 'px';
-    circle.style.height = '70px';
-    circle.style.width = '70px';
-    circle.style.transition = 'all 0.15s ease';
-    circle.style['-webkit-transition'] = 'all 0.15s ease';
-    circle.style['-moz-transition'] = 'all 0.15s ease';
-    circle.style['-ms-transition'] = 'all 0.15s ease';
-    circle.style['-o-transition'] = 'all 0.15s ease'; 
-
+    circle.style.height = '75px';
+    circle.style.width = '75px';
+    circle.style.transition = 'all 0.12s ease';
+    circle.style['-webkit-transition'] = 'all 0.12s ease';
+    circle.style['-moz-transition'] = 'all 0.12s ease';
+    circle.style['-ms-transition'] = 'all 0.12s ease';
+    circle.style['-o-transition'] = 'all 0.12s ease'; 
    // include all vendor prefixes 
    // you can customize the animation transitions
    // make transition length `0.${speedSlider}`
