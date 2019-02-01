@@ -322,7 +322,7 @@ main {
 
 .lightbox figure {
     /* add content here */
-    padding: 40px 50%;
+    padding: 40px 25%;
     background: black;
 } 
 
@@ -617,6 +617,11 @@ form.projects {
         margin: 0 5%;
         padding: 0;
     }
+    .lightbox figure {
+        /* add content here */
+        padding: 40px 50%;
+        background: black;
+    } 
     .lightbox figcaption {
         font-size: 5vw;
     }
@@ -627,6 +632,7 @@ form.projects {
         height: 3rem;
         font-size: 3rem;
     }
+    
 
      /*   Projects  */
 
