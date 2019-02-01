@@ -171,30 +171,6 @@ main {
     transition:all 0.5s ease;    
 }     
 /*/////////////////////////////////////////LIGHTBOX MENU ////////////////////*/
-/*
-.lightbox .light-item:hover::before {
-    transform: scaleX(1.5) scaleY(1.5);
-    -webkit-transform: scaleX(1.5) scaleY(1.5);
-    -ms-transform: scaleX(1.5) scaleY(1.5);
-    -o-transform: scaleX(1.5) scaleY(1.5);
-    position: absolute;
-    display: inline;
-    left: -7rem;
-    content: "<"; 
-}
-
-.lightbox .light-item:hover::after {
-    transform: scaleX(1.5) scaleY(1.5);
-    -webkit-transform: scaleX(1.5) scaleY(1.5);
-    -ms-transform: scaleX(1.5) scaleY(1.5);
-    -o-transform: scaleX(1.5) scaleY(1.5);
-    position: absolute;
-    display: inline;
-    right: -7rem;
-    content: ">";
-}
-
-*/ 
 .lightbox {
     display: none;
     font-family: SpartanMB;
@@ -346,7 +322,7 @@ main {
 
 .lightbox figure {
     /* add content here */
-    padding: 40px 100%;
+    padding: 40px 50%;
     background: black;
 } 
 
