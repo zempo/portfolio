@@ -150,30 +150,3 @@ menu.onmouseout = function position5(e) {
     circle.style['-ms-transition'] = '-ms-transform 0.5s ease'; 
     circle.style['-o-transition'] = '-o-transform 0.5s ease';
 } 
-  
-/*
-    transform: scaleX(2.5);
-    -webkit-transition: all 0.5s ease;
-    -moz-transition:all 0.5s ease;
-    -ms-transition:all 0.5s ease;
-    -o-transition:all 0.5s ease;
-    transition:all 0.5s ease;  
-
-    circle.style.transform = 'scaleX(2) scaleY(2)';
-    circle.style['-webkit-transform'] = 'scaleX(2) scaleY(2)';
-    circle.style['-moz-transform'] = 'scaleX(2) scaleY(2)';
-    circle.style['-ms-transform'] = 'scaleX(2) scaleY(2)';
-    circle.style['-o-transform'] = 'scaleX(2) scaleY(2)';
-    circle.style.transition = 'all 0.1s ease';
-    circle.style['-webkit-transition'] = 'all 0.1s ease';
-    circle.style['-moz-transition'] = 'all 0.1s ease';
-    circle.style['-ms-transition'] = 'all 0.1s ease'; 
-    circle.style['-o-transition'] = 'all 0.1s ease';
-*/
-
-
-
- 
-
-
-

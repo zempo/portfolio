@@ -3,7 +3,7 @@
     src: url(fonts/SpartanMB-Regular.otf);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic');
 
 * {
     box-sizing: border-box;
@@ -40,10 +40,13 @@ h2 {
     font-size: 30px; 
     margin: 10px auto;
 }
+h3 {
+   font-family: 'Didact Gothic', sans-serif;
+}
 p {
     font-size: 20px;
     text-align: justify;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Didact Gothic', sans-serif;
 }
 
 /*///////////////////////////////////////   HEADER  /////////////////////////////*/
@@ -125,8 +128,7 @@ main {
     width: 70%; 
     height: 400px;
     display: none;
-    font-family: 'Libre Baskerville', serif;
-    font-family: 'PT Sans', sans-serif; 
+    font-family: 'Didact Gothic', sans-serif;
     overflow: hidden;
 } 
 
@@ -136,7 +138,7 @@ main {
     padding: 20px;
     width: 100%; 
     height: auto;
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Didact Gothic', sans-serif;
     overflow: hidden;
 } 
 .content--homeMobile h2 {
@@ -145,6 +147,7 @@ main {
 }
 .content--homeMobile p {
     margin: 0; 
+    text-align: center;
 }
 .sectionM--head .sectionM--bio__pic {
     border-top: 2px solid black;
