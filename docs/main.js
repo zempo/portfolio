@@ -78,11 +78,11 @@ document.onmousemove = function position(e) {
     circle.style.top = e.pageY + 5 + 'px';
     circle.style.height = '65px';
     circle.style.width = '65px';
-    circle.style.transition = 'all 0.12s ease';
-    circle.style['-webkit-transition'] = 'all 0.12s ease';
-    circle.style['-moz-transition'] = 'all 0.12s ease';
-    circle.style['-ms-transition'] = 'all 0.12s ease';
-    circle.style['-o-transition'] = 'all 0.12s ease'; 
+    circle.style.transition = 'all 0.06s ease';
+    circle.style['-webkit-transition'] = 'all 0.06s ease';
+    circle.style['-moz-transition'] = 'all 0.06s ease';
+    circle.style['-ms-transition'] = 'all 0.06s ease';
+    circle.style['-o-transition'] = 'all 0.06s ease'; 
    // include all vendor prefixes 
    // you can customize the animation transitions
    // make transition length `0.${speedSlider}`

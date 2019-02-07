@@ -322,7 +322,7 @@ main {
 
 .lightbox figure {
     /* add content here */
-    padding: 40px 25%;
+    padding: 25% 25%;
     background: black;
 } 
 
@@ -337,7 +337,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    font-size: 15vw;
+    font-size: 11vh;
 }
 
 /* Close button */
@@ -372,8 +372,8 @@ main {
 .lightbox .close::after {
     right: -2rem;
     top: -2rem;
-    width: 5rem;
-    height: 5rem;
+    width: 3rem;
+    height: 3rem;
     position: absolute;
     display: flex;
     z-index: 1;
@@ -384,7 +384,7 @@ main {
     border-radius: 50%;
     color: white;
     content: "×";
-    font-size: 5rem;
+    font-size: 3rem;
     cursor: pointer;
 }
 
@@ -402,52 +402,46 @@ main {
  
 /*/////////////////////////////////////////  PROJECTS  ////////////////////////////*/
 
+/*
+    <main role="main">
+
+        <div class="content content--projects">
+            <h2>Quiz App</h2>
+            <h3>Languages: HTML, CSS, jquery, JS ES5</h3>
+            <h3>Scope: Front-End, Libraries</h3>
+            <h3>Github Repo:</h3>
+            <h3>Live Site:</h3>
+            <h3>Description: Made a quiz app on the subject of gastronomy. Practiced </h3>
+        </div>
+
+        <div class="content content--works">
+            <h2>Check out my other works too!</h2> 
+            <p>Voice Acting Website & Poetry Website.</p>
+        </div>
+    </main> 
+
+.content {
+    border: 1px solid rgb(158, 148, 148); 
+    margin: auto; 
+    height: 400px; 
+}
+*/
+
 .content--projects {
     border: none;
     width: 100%;
+    height: auto;
+    padding: 20px;
 }
 
 .content--works {
     width: 100%;
 }
 
-.content--projects__results {
-    margin-top: 225px;
-    height: auto;
-    padding: 20px;
+.content--projects {
     border: none;
 }
 
-form.projects {
-    -webkit-display: flex;
-    -moz-display: flex;
-    -ms-display: flex;
-    -o-display: flex;
-    display: flex; 
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 100%; 
-}
-.projects hr {
-    width: 70%;
-    margin: 10px auto;
-}
-.projects label, .projects input, .projects select, .projectBtn {font-size: 25px;font-family: SpartanMB;}
-
-#label1 {font-size: 30px; margin: 30px auto 20px;}
-#label3, #label4 {margin: 10px auto 10px}
-#search {width: 70%; text-align: center}
-
-.projectBtn, select, option {
-    color: white;
-    background: black;
-    border: 3px solid white;
-    font-family: 'Libre Baskerville', serif;
-    text-align: center;
-    padding: 10px;
-    height: 70px; 
-} 
 .projectBtn {width: 70%; height: 100px;border-radius: 2%; border: 4px double white; font-family: SpartanMB; font-size: 40px; } 
 .projectBtn:hover {background: white; color: black;}
 .projectBtn:active {background: black; color: white;}
@@ -555,35 +549,9 @@ form.projects {
         margin-right: 5%;
     }
     /*   Projects  */
-    .content--projects {height: auto;}
-    .content--projects__results {
-        margin-top: 10px;
-        height: auto;
-        padding: 20px 40px;
-    }
+    .content--projects {
+        height: auto;}
 
-    form.projects {
-        display: grid;
-        margin: auto;
-        width: 90%;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-areas:
-        "l1 l1 l1"
-        "search search btn"
-        "l2 l3 l4"
-        "s1 s2 s3";
-        text-align: center;
-        grid-gap: 10px;
-    } 
-    #search {width: 100%; height: 100%; grid-area: search}
-    #label1 {margin: 1px; grid-area: l1; font-size: 40px;}
-    #label2 {margin: 1px; grid-area: l2}
-    #year {margin: 1px; grid-area: s1; text-align-last: center;}
-    #label3 {margin: 1px; grid-area: l3}
-    #language {margin: 1px; grid-area: s2; text-align-last: center;}
-    #label4 {margin: 1px; grid-area: l4}
-    #scope {margin: 1px; grid-area: s3; text-align-last: center;} 
-    .projectBtn {margin: 1px; grid-area: btn; width: 100%; height: 60px; font-size: 25px;}
 }  
 
 @media screen and (min-width: 1000px) {
@@ -632,13 +600,4 @@ form.projects {
         height: 3rem;
         font-size: 3rem;
     }
-    
-
-     /*   Projects  */
-
-     form.projects {
-         grid-gap: 20px;
-     }
-     #label1 {font-size: 50px}
-     .projects label, .projects input, .projects select, .projectBtn {font-size: 30px;}
 } 
