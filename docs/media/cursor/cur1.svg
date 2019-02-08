@@ -1,3 +1,13 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M420 322.9C420 392.89 362.85 449.71 292.46 449.71C222.07 449.71 164.93 392.89 164.93 322.9C164.93 252.91 222.07 196.09 292.46 196.09C362.85 196.09 420 252.91 420 322.9Z" id="a4HvAUlG4h"></path><path d="M482.03 326.36C482.03 428.09 398.91 510.69 296.53 510.69C194.15 510.69 111.03 428.09 111.03 326.36C111.03 224.62 194.15 142.03 296.53 142.03C398.91 142.03 482.03 224.62 482.03 326.36Z" id="c43O0L71C"></path><path d="M437.46 322.9C437.46 403.37 372.49 468.7 292.46 468.7C212.44 468.7 147.46 403.37 147.46 322.9C147.46 242.43 212.44 177.1 292.46 177.1C372.49 177.1 437.46 242.43 437.46 322.9Z" id="b1PWBA9R7t"></path></defs><g><g><g><use xlink:href="#a4HvAUlG4h" opacity="1" fill="#e21e13" fill-opacity="1"></use><g><use xlink:href="#a4HvAUlG4h" opacity="1" fill-opacity="0" stroke="#e22c12" stroke-width="9" stroke-opacity="0.44"></use></g></g><g><g><use xlink:href="#c43O0L71C" opacity="1" fill-opacity="0" stroke="#f1f0e3" stroke-width="3" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#b1PWBA9R7t" opacity="1" fill-opacity="0" stroke="#f1f0e3" stroke-width="3" stroke-opacity="1"></use></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg version="1.1" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path id="a" d="m420 322.9c0 69.99-57.15 126.81-127.54 126.81s-127.53-56.82-127.53-126.81 57.14-126.81 127.53-126.81 127.54 56.82 127.54 126.81z"/>
+<path id="b" d="m482.03 326.36c0 101.73-83.12 184.33-185.5 184.33s-185.5-82.6-185.5-184.33c0-101.74 83.12-184.33 185.5-184.33s185.5 82.59 185.5 184.33z"/>
+<path id="c" d="m437.46 322.9c0 80.47-64.97 145.8-145 145.8-80.02 0-145-65.33-145-145.8s64.98-145.8 145-145.8c80.03 0 145 65.33 145 145.8z"/>
+</defs>
+<use fill="#e21e13" xlink:href="#a"/>
+<use fill-opacity="0" stroke="#e22c12" stroke-opacity=".44" stroke-width="9" xlink:href="#a"/>
+<use fill-opacity="0" stroke="#f1f0e3" stroke-width="3" xlink:href="#b"/>
+<use fill-opacity="0" stroke="#f1f0e3" stroke-width="3" xlink:href="#c"/>
+</svg>

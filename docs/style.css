@@ -13,10 +13,10 @@ body {
     margin: 0;
     background: black;
     color: white;
-    cursor: url(media/cursor2.svg), auto;
+    cursor: url(media/cursor.svg), auto;
 }
 h1 a:hover {
-    cursor: url(media/cursor3.svg), auto;
+    cursor: url(media/cursor2.svg), auto;
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     -ms-transition: all 0.5s ease;
@@ -27,7 +27,7 @@ h1 a:hover {
  
 .rwd {
     display: block;
-}  
+}   
 
 .cursor {
     height: 50px;
@@ -50,7 +50,7 @@ p {
 }
 
 /*///////////////////////////////////////   HEADER  /////////////////////////////*/
- 
+
 header {
     font-family: SpartanMB;
     -webkit-display: flex;
@@ -400,7 +400,7 @@ main {
     position: fixed;
     background-color: rgba(0,0,0,.6); 
     content: "";
-    cursor: url(media/cursor2.svg), auto;
+    cursor: url(media/cursor.svg), auto;
   }
  
 /*/////////////////////////////////////////  PROJECTS  ////////////////////////////*/
