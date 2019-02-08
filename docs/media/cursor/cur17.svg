@@ -1,3 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" viewBox="0 0 640 640" width="640" height="640"><defs><path d="M419.93 322.87C419.93 392.84 362.8 449.65 292.43 449.65C222.06 449.65 164.93 392.84 164.93 322.87C164.93 252.9 222.06 196.09 292.43 196.09C362.8 196.09 419.93 252.9 419.93 322.87Z" id="c1MvM1SAU9"></path><path d="M481.26 322.87C481.26 428.74 395.23 514.69 289.26 514.69C183.29 514.69 97.26 428.74 97.26 322.87C97.26 217 183.29 131.04 289.26 131.04C395.23 131.04 481.26 217 481.26 322.87Z" id="c70o2ZX9H"></path><path d="M452.42 318.75C453.12 408.2 382 481.38 293.7 482.07C205.39 482.76 133.13 410.7 132.43 321.25C131.73 231.8 202.85 158.62 291.16 157.93C379.46 157.24 451.72 229.3 452.42 318.75Z" id="a1M1J4HN9n"></path><path d="M432.42 325.05C433.04 403.34 370.81 467.4 293.54 468C216.27 468.61 153.05 405.53 152.43 327.24C151.82 248.94 214.05 184.89 291.32 184.28C368.58 183.68 431.81 246.75 432.42 325.05Z" id="d1QwrlLzCW"></path></defs><g><g><g><use xlink:href="#c1MvM1SAU9" opacity="1" fill="#e23b13" fill-opacity="1"></use><g><use xlink:href="#c1MvM1SAU9" opacity="1" fill-opacity="0" stroke="#e24212" stroke-width="9" stroke-opacity="0.44"></use></g></g><g><g><use xlink:href="#c70o2ZX9H" opacity="1" fill-opacity="0" stroke="#f1f0e3" stroke-width="2" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#a1M1J4HN9n" opacity="1" fill-opacity="0" stroke="#f1f0e3" stroke-width="3" stroke-opacity="1"></use></g></g><g><g><use xlink:href="#d1QwrlLzCW" opacity="1" fill-opacity="0" stroke="#f1f0e3" stroke-width="1" stroke-opacity="1"></use></g></g></g></g></svg>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg  PUBLIC '-//W3C//DTD SVG 1.1//EN'  'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'>
+<svg version="1.1" viewBox="0 0 640 640" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<defs>
+<path id="a" d="m419.93 322.87c0 69.97-57.13 126.78-127.5 126.78s-127.5-56.81-127.5-126.78 57.13-126.78 127.5-126.78 127.5 56.81 127.5 126.78z"/>
+<path id="c" d="m481.26 322.87c0 105.87-86.03 191.82-192 191.82s-192-85.95-192-191.82 86.03-191.83 192-191.83 192 85.96 192 191.83z"/>
+<path id="d" d="m452.42 318.75c0.7 89.45-70.42 162.63-158.72 163.32-88.31 0.69-160.57-71.37-161.27-160.82s70.42-162.63 158.73-163.32c88.3-0.69 160.56 71.37 161.26 160.82z"/>
+<path id="b" d="m432.42 325.05c0.62 78.29-61.61 142.35-138.88 142.95-77.27 0.61-140.49-62.47-141.11-140.76-0.61-78.3 61.62-142.35 138.89-142.96 77.26-0.6 140.49 62.47 141.1 140.77z"/>
+</defs>
+<use fill="#e23b13" xlink:href="#a"/>
+<use fill-opacity="0" stroke="#e24212" stroke-opacity=".44" stroke-width="9" xlink:href="#a"/>
+<use fill-opacity="0" stroke="#f1f0e3" stroke-width="2" xlink:href="#c"/>
+<use fill-opacity="0" stroke="#f1f0e3" stroke-width="3" xlink:href="#d"/>
+<use fill-opacity="0" stroke="#f1f0e3" xlink:href="#b"/>
+</svg>
